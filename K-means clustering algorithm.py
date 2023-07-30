@@ -18,12 +18,14 @@ files.upload()
 
 !kaggle datasets download -d vjchoudhary7/customer-segmentation-tutorial-in-python
 
+!unzip Mall_customer.zip
+
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import warnings
 warnings.filterwarnings("ignore")
-data = pd.read_csv("/content/customer-segmentation-tutorial-in-python.zip")
+data = pd.read_csv("/content/Mall_Customers.csv")
 
 data.head()
 
